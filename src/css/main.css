@@ -1,5 +1,5 @@
 body {
-  color: blue;
+  color: rgb(156, 36, 56);
 }
 
 .search-bar {
@@ -37,10 +37,10 @@ button[type=submit] {
   padding-top: 5%;
 }
 
----------------------------------------------------- .movies-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .movie-card {
@@ -51,6 +51,8 @@ button[type=submit] {
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  width: calc(25% - 10px);
+  margin-bottom: 20px;
 }
 
 .movie-card h2 {
