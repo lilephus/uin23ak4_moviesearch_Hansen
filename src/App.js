@@ -57,11 +57,12 @@ function App() {
   return (
     <div className="App">
       <h1>Søk Film</h1>
-      <form onSubmit={handleSubmit}>
-        <input type="text" value={searchTerm} onChange={handleChange} />
-        <button type="submit"><i className="fa fa-search" aria-hidden="true"></i></button>
-
-      </form>
+      <form onSubmit={handleSubmit} className="search-form">
+  <input type="text" value={searchTerm} onChange={handleChange} />
+  <button type="submit">
+    <i className="fa fa-search" aria-hidden="true"></i>
+  </button>
+</form>
       {renderMovies()}
     </div>
   );
